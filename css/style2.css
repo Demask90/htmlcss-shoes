@@ -10,7 +10,6 @@ body{
 }
 
 .container{
-    position: relative;
     width: 100%;
     height: 300vh;
 }
@@ -24,7 +23,6 @@ nav{
 
 nav a{
     background-color: white;
-    border: none;
     padding: 10px 15px;
     text-decoration: none;
     color: black;
@@ -34,22 +32,9 @@ nav a{
 }
 
 .box{
-    position: relative;
     width: 100%;
     height: 100vh;
-    text-align: center;
-    font-size: 3em;
-}
-
-.box .image.text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  
-}
-
-.box .image img, .box .text div{
-    width: 80%;
+    position: relative;
 }
 
 #red{
@@ -65,4 +50,32 @@ nav a{
 #yellow{
     background-color: yellow;
     color: green;
+}
+
+.image{
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#red.box .image{
+    background-image: url(../img/01.png);
+}
+
+#green.box .image{
+    background-image: url(../img/02.png);
+}
+
+#yellow.box .image{
+    background-image: url(../img/03.png);
+}
+
+.box .text div{
+    width: 40%;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-align: center;
 }
